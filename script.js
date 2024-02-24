@@ -21,11 +21,90 @@
 // let cost = 15, profit = 5, salesPrice = cost + profit 
 // console.log(salesPrice)
 
-// plus (+) : for strings
+// // plus (+) : for strings
 
-let firstName = " tunde" ,surname = "zara", fullName = surname + firstName;
+// let firstName = " tunde" ,surname = "zara", fullName = surname + firstName;
 
-console.log(fullName  + " is a big boy")
+// console.log(fullName  + " is a big boy")
+ 
+
+// INCREMENT AND DECREMENT
+
+//LOGICAL OPERATORS
+//AND OPERATOR &&
+let result;
+let age = 30;
+if(age > 20 && age < 30){
+    result = age + 50;
+
+}
+else{ 
+    result = age;
+}
+console.log(result);
+
+// OR OPERATOR
+
+let cost = 40;
+let sellprice;
+let profit = 10
+if(cost >= 50 || cost === 55){
+    sellprice = cost + profit
+}
+else{
+    sellprice = cost
+}
+console.log(sellprice)
+
+let name = "Hayzed"
+
+if (name !== "Hayzed"){
+    console.log("why are you lying?");
+}
+else{
+    console.log("That is good");
+}
+
+
+// LOOP //
+
+let num = 5;
+let i = 0;
+while (i < num){
+    i++;
+    console.log(i);
+}
+
+// FOR LOOP //
+for (let i = 0; i < num; i++){
+    console.log(i)
+}
+// CHECKING FOR A LEAP YEAR //
+// CONDITION //
+ // the year divided by 4 should have a reminder of 0 //
+ // the year 
+
+
+ const year = prompt('Enter year');
+
+const checkLeap = (year)=> {
+    let result;
+    if((year % 4  === 0 && year % 100 !== 0) || (year % 4  === 0 && year % 100 === 0 && year % 400 === 0)){
+        result = "Yes! it is a leap year"
+
+    }else {
+        result = "No! it is not a leap year"
+    };
+
+    return result;
+};
+
+const answer = checkLeap(year);
+alert(answer)
+// console.log(answer);
+
+
+
 
 
 
